@@ -545,3 +545,121 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.0.37
 ![image](https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/blob/main/img/ping.png)
 
 ## CIDR - Cisco
+
+### Topologi
+
+<img width="660" alt="Jepretan Layar 2023-12-06 pukul 19 52 49" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/d68de4ba-1b19-476b-af23-639dc1db3e4c">
+
+### Pembagian Subnet
+<img width="696" alt="Jepretan Layar 2023-12-06 pukul 19 32 37" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/8520ce4c-9c32-4502-98ee-aa817ad2a5c3">
+
+### Penggabungan-CIDR
+<img width="1028" alt="Jepretan Layar 2023-12-06 pukul 19 33 24" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/b90b82b0-8a00-4a35-bf82-d8ae12112d67">
+
+<img width="1028" alt="Jepretan Layar 2023-12-06 pukul 19 33 02" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/a3a3ecb7-64b2-42c5-a4cb-889202365115">
+
+### Tree-CIDR
+<img width="1028" alt="Jepretan Layar 2023-12-06 pukul 19 36 15" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/6aa049d4-0a74-4afb-ab2f-4adadc05cd70">
+
+### Pembagian IP-CIDR
+<img width="1028" alt="Jepretan Layar 2023-12-06 pukul 19 36 32" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/1c8ac85f-f8f1-4613-b800-ef6bbc381697">
+
+### Subnetting
+| Subnet | Rute               		| IPv4            | Netmask           |
+|--------|------------------------------|-----------------|-------------------|
+| A1     | Router Eisen       		| 192.217.80.9    | 255.255.255.252   |
+|        | Server-PT Stark    		| 192.217.80.10   | 255.255.255.252   |
+| A2     | Router Eisen       		| 192.217.72.1    | 255.255.255.252   |
+|        | Router Lugner      		| 192.217.72.2    | 255.255.255.252   |
+| A3     | Router Lugner      		| 192.217.64.1    | 255.255.252.0     |
+|        | PC-PT Region     		| 192.217.64.2    | 255.255.252.0     |
+| A4     | Router Lugner      		| 192.217.68.1    | 255.255.255.0     |
+|        | PC-PT GrobeForest      	| 192.217.68.2    | 255.255.255.0     |
+| A5     | Router Eisen       		| 192.217.32.1    | 255.255.255.252   |
+|        | Router Linie        		| 192.217.32.2    | 255.255.255.252   |
+| A6     | Router Linie        		| 192.217.8.1     | 255.255.255.252   |
+|        | Router Lawine       		| 192.217.8.2     | 255.255.255.252   |
+| A7     | Router Linie        		| 192.217.16.1    | 255.255.254.0     |
+|        | PC-PT GranzChannel     	| 192.217.16.2    | 255.255.254.0     |
+| A8     | Router Lawine       		| 192.217.4.1     | 255.255.255.192   |
+|        | PC-PT BredtRegion      	| 192.217.4.3     | 255.255.255.192   |
+|        | Router Heiter       		| 192.217.4.2     | 255.255.255.192   |
+| A9     | Router Heiter       		| 192.217.0.1     | 255.255.252.0     |
+|        | Server-PT Sein         	| 192.217.0.3     | 255.255.252.0     |
+|        | PC-PT ReigelCanyon     	| 192.217.0.2     | 255.255.252.0     |
+| A10    | Router Eisen       		| 192.217.80.1    | 255.255.255.248   |
+|        | Server-PT Ritcher      	| 192.217.80.2    | 255.255.255.248   |
+|        | Server-PT Revolte      	| 192.217.80.3    | 255.255.255.248   |
+| A11    | Router Aura         		| 192.217.128.1   | 255.255.255.252   |
+|        | Router Eisen       		| 192.217.128.2   | 255.255.255.252   |
+| A12    | Router Aura         		| 192.219.1.1     | 255.255.255.252   |
+|        | Router Denken       		| 192.219.1.2     | 255.255.255.252   |
+| A13    | Router Denken       		| 192.219.0.1     | 255.255.255.0     |
+|        | PC-PT RoyalCapital     	| 192.219.0.2     | 255.255.255.0     |
+|        | PC-PT WilleRegion      	| 192.219.0.3     | 255.255.255.0     |
+| A14    | Router Aura         		| 192.218.128.1   | 255.255.255.252   |
+|        | Router Freiern     		| 192.218.128.2   | 255.255.255.252   |
+| A15    | Router Frieren      		| 192.218.64.1    | 255.255.255.224   |
+|        | PC-PT LakeCorridor     	| 192.218.64.2    | 255.255.255.224   |
+| A16    | Router Frieren      		| 192.218.32.1    | 255.255.255.252   |
+|        | Router Flamme       		| 192.218.32.2    | 255.255.255.252   |
+| A17    | Router Flamme       		| 192.218.8.1     | 255.255.255.252   |
+|        | Router Fern         		| 192.218.8.2     | 255.255.255.252   |
+| A18    | Router Fern         		| 192.218.0.1     | 255.255.248.0     |
+|        | PC-PT LaubHills        	| 192.218.0.2     | 255.255.248.0     |
+|        | PC-PT AppetiteRegion    	| 192.218.0.3     | 255.255.248.0     |
+| A19    | Router Flamme       		| 192.218.16.1    | 255.255.252.0     |
+|        | PC-PT RohrRoad         	| 192.218.16.2    | 255.255.252.0     |
+| A20    | Router Flamme       		| 192.218.20.9    | 255.255.255.252   |
+|        | Router Himmel       		| 192.218.20.10   | 255.255.255.252   |
+| A21    | Router Himmel       		| 192.218.20.1    | 255.255.255.248   |
+|        | PC-PT SchewerMountains  	| 192.218.20.2    | 255.255.255.248   |
+
+
+### Routing
+
+- Router Aura
+  
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 39 38" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/2af38fe2-b108-4efa-8c0c-509d48adc2e0">
+
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 40 09" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/7f08f06a-e5a9-4aed-9c6f-15f2f39a0dcd">
+
+- Router Denken
+
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 41 04" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/27cad1e7-fdf2-44be-8c63-59fe47b916ec">
+
+- Router Frieren
+
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 41 46" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/e9c54d47-8419-4979-be0a-469c8bdf61d6">
+
+- Router Flame
+  
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 49 48" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/5aaef3cf-82e5-4d59-aaa9-ef1d04d79697">
+
+- Router Fern
+  
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 49 28" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/4e0d4e35-68e3-482c-bff1-a9e3876335fe">
+
+- Router Himmel
+  
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 50 11" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/331f4909-0840-4e6e-b192-fb05272f5fbf">
+
+- Router Eisen
+  
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 45 53" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/64bb0111-0780-4793-a4a5-b53e1e825429">
+
+- Router Lugner
+  
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 47 45" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/a48c945e-66ef-40bb-a3f9-0b4e5deae38a">
+
+- Router Linie
+  
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 48 08" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/bc9b8d0b-23b6-40e3-bdff-70a06fe1e5b1">
+
+- Router Lawine
+  
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 48 31" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/26f09e1e-2bb3-46b0-9069-d03907b5d4a0">
+
+- Router Heiter
+
+  <img width="501" alt="Jepretan Layar 2023-12-06 pukul 19 49 00" src="https://github.com/fzhmghfrh/Jarkom-Modul-4-E22-2023/assets/116636265/92013a8d-48f3-4948-b529-6d8b5d40104c">
